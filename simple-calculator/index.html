@@ -8,17 +8,16 @@
     <title>Simple Calculator</title>
 </head>
 <body>
+    <!--Project header-->
     <header class="header">
         <div class="container-1">
             <h1>Simple Calculator</h1>
         </div>
-
     </header>
+    <!--main-->
     <main class="container-2">
         <div class="form-div">
-
-
-                <input type="text" name="firstNum" id="firstNum" placeholder="Enter a number">
+            <input type="text" name="firstNum" id="firstNum" placeholder="Enter a number">
                  <select name="operator" id="operator" title="operator" onchange="operatorValue()">
                     <option value="select">Select</option>
                     <option value="+">ADD</option>
@@ -27,21 +26,20 @@
                     <option value="*">Multiply</option>
                 </select>
                 <input type="text" name="secondNum" id="secondNum" placeholder="Enter a number">
-                <button type="submit" id = 'button' onclick="textValidate()">CALCULATE</button>
-
-
+            <button type="submit" id = 'button' onclick="textValidate()">CALCULATE</button>
         </div>
-        <p id="demo"></p>
 
+        <!--error message display here-->
+        <p id="demo" value = "error-msg"></p>
+
+        <!--result shows here-->
         <div class="result-div">
             <h2 id="show-result" class="show-result"></h2>
         </div>
-
     </main>
 
 
 
     <script src="index.js"></script>
 </body>
-
 </html>

@@ -1,7 +1,9 @@
+
 * {
     background-color: hsl(177, 33%, 79%);
 }
 
+/* header styles*/
 header {
     display: flex;
     justify-content: center;
@@ -11,6 +13,7 @@ header {
     color: hsl(217, 87%, 15%);
 }
 
+/* main styles*/
 .form-div {
     display: flex;
     justify-content: center;
@@ -20,6 +23,14 @@ header {
 
 }
 
+/* error block styles*/
+p {
+    text-align: center;
+    font-style: italic;
+    color: rosybrown;
+}
+
+/* result container styles*/
 .result-div {
     height: 50px;
     margin: 30px 580px 0 580px;
@@ -39,8 +50,4 @@ header {
     font-weight: 700;
 
 
-}
-
-p {
-    text-align: center;
 }
