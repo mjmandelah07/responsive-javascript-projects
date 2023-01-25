@@ -1,26 +1,42 @@
+body {
+    margin: 0;
 
-* {
     background-color: hsl(177, 33%, 79%);
 }
+* {
 
-/* header styles*/
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
 }
-.container-1 {
+
+h1 {
     color: hsl(217, 87%, 15%);
 }
 
-/* main styles*/
-.form-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    padding: 50px;
 
+
+/* main styles*/
+.container {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.form-div {
+
+}
+
+
+input[type="text"] {
+    width: 20%;
+    margin-right: 5px;
+    height: 40px;
+    border-radius: 8px;
+
+}
+input[type="text"]:focus {
+    border: ;
 }
 
 /* error block styles*/
@@ -32,16 +48,15 @@ p {
 
 /* result container styles*/
 .result-div {
-    height: 50px;
-    margin: 30px 580px 0 580px;
-    background-color: hsl(217, 87%, 15%);
-    border-radius: 10px;
-    border-style: double;
-    border-color: rgb(70, 12, 75);
-    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: hsl(337, 87%, 15%);
 }
 
 .show-result {
+
+    height: 10%;
+    width: 30%;
     background-color: hsl(217, 87%, 15%);
     color: aliceblue;
     font-size: extra-large;

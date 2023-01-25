@@ -46,3 +46,5 @@ function textValidate() {
     document.getElementById("demo").innerHTML = errorMsg;
 
 }
+
+

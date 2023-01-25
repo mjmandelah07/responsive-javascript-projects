@@ -8,15 +8,13 @@
     <title>Simple Calculator</title>
 </head>
 <body>
-    <!--Project header-->
-    <header class="header">
-        <div class="container-1">
-            <h1>Simple Calculator</h1>
-        </div>
-    </header>
     <!--main-->
-    <main class="container-2">
+
+    <main class="container">
         <div class="form-div">
+            <div class="header">
+                <h1>Simple Calculator</h1>
+            </div>
             <input type="text" name="firstNum" id="firstNum" placeholder="Enter a number">
                  <select name="operator" id="operator" title="operator" onchange="operatorValue()">
                     <option value="select">Select</option>
@@ -27,15 +25,17 @@
                 </select>
                 <input type="text" name="secondNum" id="secondNum" placeholder="Enter a number">
             <button type="submit" id = 'button' onclick="textValidate()">CALCULATE</button>
-        </div>
-
-        <!--error message display here-->
-        <p id="demo" value = "error-msg"></p>
+            <input type="reset" value="Reset">
+            <p id="demo" value = "error-msg"></p>
 
         <!--result shows here-->
         <div class="result-div">
             <h2 id="show-result" class="show-result"></h2>
         </div>
+        </div>
+
+        <!--error message display here-->
+
     </main>
 
 
