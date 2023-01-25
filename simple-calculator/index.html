@@ -11,23 +11,25 @@
     <!--main-->
 
     <main class="container">
-        <div class="form-div">
-            <div class="header">
+        <div>
+            <div>
                 <h1>Simple Calculator</h1>
             </div>
+            <div class="text-div">
             <input type="text" name="firstNum" id="firstNum" placeholder="Enter a number">
-                 <select name="operator" id="operator" title="operator" onchange="operatorValue()">
+                 <select name="operator" id="operator" title="operator" onchange="operatorValue()" class="selector">
                     <option value="select">Select</option>
-                    <option value="+">ADD</option>
-                    <option value="-">Subtract</option>
-                    <option value="/">Divide</option>
-                    <option value="*">Multiply</option>
-                </select>
-                <input type="text" name="secondNum" id="secondNum" placeholder="Enter a number">
-            <button type="submit" id = 'button' onclick="textValidate()">CALCULATE</button>
-            <input type="reset" value="Reset">
-            <p id="demo" value = "error-msg"></p>
+                    <option value="+" >ADD</option>
+                    <option value="-" >Subtract</option>
+                    <option value="/" >Divide</option>
+                    <option value="*" >Multiply</option>
 
+                </select>
+            <input type="text" name="secondNum" id="secondNum" placeholder="Enter a number">
+            <button type="submit" id='button' onclick="textValidate()">CALCULATE</button>
+           
+            <p id="demo" value = "error-msg"></p>
+        </div>
         <!--result shows here-->
         <div class="result-div">
             <h2 id="show-result" class="show-result"></h2>

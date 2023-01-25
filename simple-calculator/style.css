@@ -8,9 +8,6 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
-    color: hsl(217, 87%, 15%);
-}
 
 
 
@@ -23,20 +20,38 @@ h1 {
 
 }
 
-.form-div {
 
+h1 {
+    color: hsl(217, 87%, 15%);
 }
 
-
+/* input text styles*/
 input[type="text"] {
-    width: 20%;
-    margin-right: 5px;
+    background-color: lightblue;
     height: 40px;
+    margin: 8px;
     border-radius: 8px;
-
+    border-style: double;
+    transition: 0.5s;
+    outline: none;
 }
 input[type="text"]:focus {
-    border: ;
+    border: 3px dotted hsl(217, 87%, 15%);
+    }
+
+.selector {
+    background-color: lightblue;
+    height: 40px;
+    border-radius: 8px;
+    border-style: dotted;
+    transition: 0.5s;
+    outline: none;
+}
+
+select:focus {
+    background-color: ivory;
+    border: 3px dotted hsl(217, 87%, 15%);
+
 }
 
 /* error block styles*/
@@ -46,23 +61,33 @@ p {
     color: rosybrown;
 }
 
+/* button style*/
+#button {
+    background-color: lightblue;
+    height: 40px;
+    border-radius: 8px;
+}
+
+
 /* result container styles*/
 .result-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     width: auto;
     height: auto;
-    background-color: hsl(337, 87%, 15%);
+
 }
 
 .show-result {
-
-    height: 10%;
-    width: 30%;
+    height: 50px;
+    width: 200px;
     background-color: hsl(217, 87%, 15%);
     color: aliceblue;
     font-size: extra-large;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
-
-
+    border-radius: 8px;
 }
