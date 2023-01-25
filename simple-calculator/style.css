@@ -1,0 +1,46 @@
+* {
+    background-color: hsl(177, 33%, 79%);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-1 {
+    color: hsl(217, 87%, 15%);
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    padding: 50px;
+
+}
+
+.result-div {
+    height: 50px;
+    margin: 30px 580px 0 580px;
+    background-color: hsl(217, 87%, 15%);
+    border-radius: 10px;
+    border-style: double;
+    border-color: rgb(70, 12, 75);
+    text-align: center;
+}
+
+.show-result {
+    background-color: hsl(217, 87%, 15%);
+    color: aliceblue;
+    font-size: extra-large;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+
+
+}
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container-1">
+            <h1>Simple Calculator</h1>
+        </div>
+
+    </header>
+    <main class="container-2">
+        <div class="form-div">
+
+
+                <input type="text" name="firstNum" id="firstNum" placeholder="Enter a number">
+                 <select name="operator" id="operator" title="operator" onchange="operatorValue()">
+                    <option value="select">Select</option>
+                    <option value="+">ADD</option>
+                    <option value="-">Subtract</option>
+                    <option value="/">Divide</option>
+                    <option value="*">Multiply</option>
+                </select>
+                <input type="text" name="secondNum" id="secondNum" placeholder="Enter a number">
+                <button type="submit" id = 'button' onclick="textValidate()">CALCULATE</button>
+
+
+        </div>
+        <p id="demo"></p>
+
+        <div class="result-div">
+            <h2 id="show-result" class="show-result"></h2>
+        </div>
+
+    </main>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
