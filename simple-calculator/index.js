@@ -5,13 +5,13 @@ let operators
 
 // function to perform the operation
 function calculate(input1, input2) {
-    if (operators === '+') {
+    if (operators === 'add') {
         result = parseFloat(input1 + input2);
         return result;
-    }else if (operators === '-') {
+    }else if (operators === 'subtract') {
         result = parseFloat(input1 - input2);
         return result;
-    }else if (operators === '/') {
+    }else if (operators === 'divide') {
         if (input2 === 0) {
             result = "Cant divide by zero";
             return result;
@@ -20,7 +20,7 @@ function calculate(input1, input2) {
             return result;
         }
 
-    }else if (operators === '*') {
+    }else if (operators === 'multiply') {
         result = parseFloat(input1 * input2);
         return result;
     }

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
 
 body {
     margin: 0;
@@ -44,8 +44,8 @@ input[type="text"] {
     transition: 0.5s;
     outline: none;
     font-size: large;
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
 }
 input[type="text"]:focus {
     border: 3px dotted hsl(217, 87%, 15%);
@@ -115,7 +115,7 @@ p {
     font-weight: 700;
     border-radius: 8px;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'PT Serif', serif;
     font-weight: 700;
     font-size: large;
 }
