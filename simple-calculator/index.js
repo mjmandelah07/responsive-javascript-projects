@@ -19,7 +19,6 @@ function calculate(input1, input2) {
             result = parseFloat(input1 / input2);
             return result;
         }
-
     }else if (operator === 'multiply') {
         result = parseFloat(input1 * input2);
         return result;
@@ -35,8 +34,8 @@ function operatorValue() {
 
  // function to get and validate the text input value
 function textValidate() {
-    let x = parseFloat(document.getElementById("firstNum").value.trim());
-    let y = parseFloat(document.getElementById("secondNum").value.trim());
+    let x = +(document.getElementById("firstNum").value.trim());
+    let y = +(document.getElementById("secondNum").value.trim());
 
     let errorMsg;
     // check if inouts are empty or  is numbers or less than 1
