@@ -6,16 +6,22 @@ let operators
 // function to perform the operation
 function calculate(input1, input2) {
     if (operators === '+') {
-        result = parseInt(input1 + input2);
+        result = parseFloat(input1 + input2);
         return result;
     }else if (operators === '-') {
-        result = parseInt(input1 - input2);
+        result = parseFloat(input1 - input2);
         return result;
     }else if (operators === '/') {
-        result = parseInt(input1 / input2);
-        return result;
+        if (input2 === 0) {
+            result = "Cant divide by zero";
+            return result;
+        }else {
+            result = parseFloat(input1 / input2);
+            return result;
+        }
+
     }else if (operators === '*') {
-        result = parseInt(input1 * input2);
+        result = parseFloat(input1 * input2);
         return result;
     }
 }
@@ -29,13 +35,13 @@ function operatorValue() {
 
  // function to get and validate the text input value
 function textValidate() {
-    let x = parseInt(document.getElementById("firstNum").value.trim());
-    let y = parseInt(document.getElementById("secondNum").value.trim());
+    let x = parseFloat(document.getElementById("firstNum").value.trim());
+    let y = parseFloat(document.getElementById("secondNum").value.trim());
 
     let errorMsg;
     // check if inouts are empty or  is numbers or less than 1
-    if (isNaN(x) && isNaN(y) || x && y < 1 && x || y === "" ) {
-        errorMsg = "Enter numbers above 0";
+    if (isNaN(x) || isNaN(y) && x || y === "" ) {
+        errorMsg = "Only numbers are allowed";
     }else {
         firstInput = x;
         secondInput = y;
@@ -46,5 +52,3 @@ function textValidate() {
     document.getElementById("demo").innerHTML = errorMsg;
 
 }
-
-
