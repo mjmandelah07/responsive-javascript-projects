@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&display=swap');
+
+
 body {
     margin: 0;
 
@@ -20,9 +23,15 @@ body {
 
 }
 
+.text-div {
+    margin-top: 70px;
+}
+
 
 h1 {
     color: hsl(217, 87%, 15%);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 /* input text styles*/
@@ -34,6 +43,9 @@ input[type="text"] {
     border-style: double;
     transition: 0.5s;
     outline: none;
+    font-size: large;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
 }
 input[type="text"]:focus {
     border: 3px dotted hsl(217, 87%, 15%);
@@ -46,6 +58,9 @@ input[type="text"]:focus {
     border-style: dotted;
     transition: 0.5s;
     outline: none;
+    font-size: large;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
 }
 
 select:focus {
@@ -64,8 +79,13 @@ p {
 /* button style*/
 .button {
     background-color: rgb(16, 114, 146);
+    color: rgb(13, 47, 202);
     height: 40px;
     border-radius: 8px;
+    font-size: large;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+
 }
 .button-1:hover {
     box-shadow: 0 0 10px 0 #208db8 inset, 0 0 20px 2px #208db8;
@@ -95,4 +115,7 @@ p {
     font-weight: 700;
     border-radius: 8px;
     text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: large;
 }
