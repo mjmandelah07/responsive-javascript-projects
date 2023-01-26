@@ -1,17 +1,17 @@
 let firstInput;
 let secondInput;
 let result;
-let operators
+let operator;
 
 // function to perform the operation
 function calculate(input1, input2) {
-    if (operators === 'add') {
+    if (operator === 'add') {
         result = parseFloat(input1 + input2);
         return result;
-    }else if (operators === 'subtract') {
+    }else if (operator === 'subtract') {
         result = parseFloat(input1 - input2);
         return result;
-    }else if (operators === 'divide') {
+    }else if (operator === 'divide') {
         if (input2 === 0) {
             result = "Cant divide by zero";
             return result;
@@ -20,7 +20,7 @@ function calculate(input1, input2) {
             return result;
         }
 
-    }else if (operators === 'multiply') {
+    }else if (operator === 'multiply') {
         result = parseFloat(input1 * input2);
         return result;
     }
@@ -29,7 +29,7 @@ function calculate(input1, input2) {
 
 // function to get the operator value
 function operatorValue() {
-    operators = document.getElementById('operator').value;
+    operator = document.getElementById('operator').value;
  }
 
 
