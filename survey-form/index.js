@@ -12,7 +12,7 @@ const store = () => {
         phoneNo: phoneno,
         age: age
     }
-    
+
     // store the user datails in the local storage
     window.localStorage.setItem(userName, JSON.stringify(user));
 
@@ -22,11 +22,11 @@ const store = () => {
 
 
 
-window.onload = function() {
+const user = () => {
+
     userName = prompt("Enter Your Name")
     document.getElementById("personForm").onsubmit = store;
-
-    // check if user name is empty, null or is a string, else if user name is already in local storage
+        // check if user name is empty, null or is a string, else if user name is already in local storage
     if (userName === null || userName === "" || !/^[a-zA-Z ]+$/.test(userName) ) {
         location.replace("error.html");
     }else if (userName in localStorage) {
@@ -36,6 +36,9 @@ window.onload = function() {
     }
 
 }
+
+
+
 
 // Hide the form  and display the details table if the user exists already
 function changeFormStyle(){
