@@ -1,19 +1,18 @@
 // redirect back to home page after some time
  // Using ES6 feature.
- let redirect_Page = (home) => {
+const button = document.querySelector('button');
+button.setAttribute('disabled', true);
+button.innerHTML = 'Redirecting in 3 secs ...';
 
-    home.value = 'Redirecting in 3 secs ...';
-    home.disabled = true;
+const backHome = setTimeout(() => {
+    // redirect page.
+    window.location.href = 'index.html';
 
-    let backHome = setTimeout(function () {
+    window.clearTimeout(backHome);		// clear time out.
 
-        // redirect page.
-        window.location.href = 'index.html';
+}, 3000);
 
-        window.clearTimeout(backHome);		// clear time out.
 
-    }, 3000);	// call function after 5000 milliseconds or 5 seconds
-}
 
 
 
