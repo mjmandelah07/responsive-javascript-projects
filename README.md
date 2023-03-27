@@ -7,4 +7,4 @@
 2. simple-calculator  (https://mjmandelah07.github.io/mj-javascripts-projects/simple-calculator)
 3. survey-form (https://mjmandelah07.github.io/mj-javascripts-projects/survey-form) OR
                 (fluttering-net.surge.sh)
-4. Breed-list (https://mjmandelah07.github.io/mj-javascripts-projects/breed-list/)
+4. Breed-list (https://mjmandelah07.github.io/mj-javascripts-projects/breed-list/) OR (https://stellar-stroopwafel-764fd7.netlify.app/)
