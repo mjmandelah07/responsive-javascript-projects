@@ -1,10 +1,10 @@
-// fetch('https://dog.ceo/api/breed/African/images/random')
+// function to get the current URL from the browser
 function getCurrentURL () {
     return window.location.search
 }
 const currentUrl = getCurrentURL()
-console.log(currentUrl);
 
+// execute when breed link is clicked and window is refreshed
 const onPageLoad = () => {
     // get the query string parameters
     const breedParams = new URLSearchParams(currentUrl);
@@ -17,14 +17,12 @@ const onPageLoad = () => {
         .then(dogBreedRes =>dogBreedRes.json())
         .then(dogImage => {
         // get the response from the server and display the breed ramdom image to the html page
-
         const dogBreedRandomImage = `<img src="${dogImage.message}"/>`
-        const headTopic = `Random ${dogBreedName} Dog Breed Image`
-        document.getElementById('bigHeading').innerHTML = headTopic;
-        console.log(headTopic);
         document.querySelector('#breedImage').insertAdjacentHTML('beforeend', dogBreedRandomImage);
-    })
-    changeDogStyle();
+
+        document.getElementById('bigHeading').innerHTML = `Random ${dogBreedName} Dog Breed Image`;  // Dog breed header text
+        })
+        changeDogStyle();
     }else {
 
         // if query string is empty, display random image of dog
@@ -32,22 +30,21 @@ const onPageLoad = () => {
         .then(dogImageRes => dogImageRes.json())
         .then(dogImageData => {
         //get the response from the server and display the dog image to the html page
-        console.log(dogImageData.message);
         const dogImage = `<img src="${dogImageData.message}"/>`;
-        const secondHeadTopic = `Random Dog Image`
-        document.getElementById('smallHeading').innerHTML = secondHeadTopic;
         document.querySelector('#dogImages').insertAdjacentHTML('beforeend', dogImage);
+        
+        document.getElementById('smallHeading').innerHTML =`Random Dog Image`;  // Dog image header text
         })
         changeBreedStyle();
     }
 };
 
-// hide the breed image if query string is empty
+// function to hide the breed image if query string is empty
 const changeBreedStyle = () =>{
     let breedDivElement = document.getElementById("randomBreedImage");
     breedDivElement.style.display = "none";
 }
-
+// function to hide random dog image if query string exists
 const changeDogStyle = () =>{
     let dogDivElement = document.getElementById("dogImage");
     dogDivElement.style.display = "none";
