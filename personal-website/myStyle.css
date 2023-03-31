@@ -75,32 +75,32 @@ html,body,h1,h2,h3,h4,h5,h6 {
     object-fit: cover;
 }
 
-.gallery__item--2 {
+.gallery__item--1 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
 }
 
-.gallery__item--3 {
-    grid-column-start: 6;
+.gallery__item--2 {
+    grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 6;
 }
-.gallery__item--4 {
+.gallery__item--3 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 6;
 }
-.gallery__item--5 {
+.gallery__item--4 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 9;
 }
-.gallery__item--6 {
+.gallery__item--5 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 6;
