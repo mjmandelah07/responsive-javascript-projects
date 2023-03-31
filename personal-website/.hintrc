@@ -3,8 +3,6 @@
     "development"
   ],
   "hints": {
-    "disown-opener": "off",
-    "detect-css-reflows/layout": "off",
     "no-inline-styles": "off",
     "axe/name-role-value": [
       "default",
