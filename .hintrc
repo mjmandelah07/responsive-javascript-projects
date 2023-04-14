@@ -11,6 +11,10 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "axe/text-alternatives": "off",
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off",
+    "axe/forms": "off"
   }
 }

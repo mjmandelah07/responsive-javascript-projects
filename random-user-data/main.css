@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+
+.head-div {
+    text-align: center;
+    background-color:  #0B004C;
+}
+
+.alert-div {
+    max-width: 45%;
+    max-height:  auto;
+    font-size: x-small;
+    margin-left: 20px;
+    border-radius: 13px;
+}
+.form-div form{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.button {
+    background-color:  #0B004C;
+}
+
+.border {
+    border-radius: 20px;
+}
+
+.content-div {
+    max-width: 90%;
+
+
+}
+img{
+    max-width: 65%;
+
+}
+.first-div {
+    display: flex;
+    background-color: aqua;
+    padding: 50px;
+    margin: 10px;
+
+}
