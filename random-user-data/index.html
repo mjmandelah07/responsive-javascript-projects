@@ -24,9 +24,9 @@
             <strong>Refresh</strong> browser for the user data to be generated!.
         </div>
     </section>
-    <!-- <section>
+    <section>
         <div class="form-div p-1 m-3 form-div">
-            <form action="" onsubmit="getUser()">
+            <form action=""  id="selectionForm">
                 <label for="gender"> Gender:
                     <select name="gender" id="gender" class="border">
                         <option value="male" id="male">male</option>
@@ -34,17 +34,10 @@
                         <option value="any" id="any">any</option>
                     </select>
                 </label>
-                 <label for="nationality"> Nationality:
-                    <select name="nat" id="nat" class="border">
-                        <option value="US" id="us">US</option>
-                        <option value="AU" id="au">AU</option>
-                        <option value="any" id="nat-any">Any</option>
-                    </select>
-                </label>
                 <input type="submit" value="Generate" class="btn button btn-primary">
             </form>
     </div>
-</section> -->
+</section>
 <section>
         <div class="w3-row-padding mt-2 w3-margin-left content-div ">
             <div class="w3-third">
@@ -66,11 +59,11 @@
           <div class="w3-twothird ">
             <div class="w3-container w3-card w3-white pt-2 border">
                 <div class=" m-3">
-                    <p id="address" style="font-size:1.7vw;"><i class="fa fa-home fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i></p>
-                    <p id="email" style="font-size:1.7vw;"><i class="fa fa-envelope fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i></p>
-                    <p id="phoneNumber" style="font-size:1.7vw;"><i class="fa fa-phone fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i></p>
-                    <p id="age" style="font-size:1.7vw;"><i class="fa fa-calendar fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i></p>
-                    <p id="passWord"style="font-size:1.7vw;"><i class="fa fa-lock fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i></p>
+                    <p style="font-size:1rem;"><i class="fa fa-home fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i><span id="address"></span></p>
+                    <p  style="font-size:1rem;"><i class="fa fa-envelope fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i><span id="email"></span></p>
+                    <p style="font-size:1rem;"><i class="fa fa-phone fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i><span id="phoneNumber"></span></p>
+                    <p  style="font-size:1rem;"><i class="fa fa-calendar fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i><span id="age"></span></p>
+                    <p style="font-size:1rem;"><i class="fa fa-lock fa-fw w3-margin-right w3-margin-left w3-large text-primary"></i><span id="passWord"></span></p>
             </div>
         </div>
 
