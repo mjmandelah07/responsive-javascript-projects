@@ -16,5 +16,5 @@ body {
 
 .image_placeholder {
     aspect-ratio: 1/1;
-    background: url('./loading.png') no-repeat;
+    background: url('./images/loading.png') no-repeat;
 }
