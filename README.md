@@ -9,4 +9,4 @@
                 (fluttering-net.surge.sh)
 4. Breed-list (https://mjmandelah07.github.io/mj-javascripts-projects/breed-list/) AND (https://stellar-stroopwafel-764fd7.netlify.app/)
 5. personal-website(https://mjmandelah07.github.io/mj-javascripts-projects/personal-website) AND https://frolicking-fairy-51fa28.netlify.app/
-6. random-user-data (https://mjmandelah07.github.io/mj-javascripts-projects/random-user-data) AND https://app.netlify.com/sites/coruscating-piroshki-ad8cf3
+6. random-user-data (https://mjmandelah07.github.io/mj-javascripts-projects/random-user-data) AND https://coruscating-piroshki-ad8cf3.netlify.app/
