@@ -1,0 +1,235 @@
+:root {
+
+    --gray: #F2F4F7;
+    --dark-gray: #D0D5DD;
+    --dark: #101828;
+    --menu-head: #101828;
+    --placeholder: #475467;
+}
+
+body {
+    background-color: #F5F5F5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+
+.container {
+    margin: 1.5rem 20rem 2rem 20rem;
+    border: 2px solid var(--dark-gray);
+    border-radius: 25px;
+    background-color: var(--gray);
+    padding: 30px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: stretch;
+    margin: .5rem;
+    padding: 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #D0D5DD;
+    font-size: 48px;
+    color: var(--darkblue);
+    line-height: 45px;
+    letter-spacing: -0.02em;
+
+}
+
+.menu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.menu .dishes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu .price-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu .price-div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: crimson;
+}
+.menu .dishes ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dish h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #101828;
+}
+
+.dish ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dish ul li {
+    color: var(--darkblue);
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 1.2rem;
+}
+
+.price-list li {
+    color: brown !important;
+}
+
+.menuForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+
+}
+
+.menuForm input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: .8rem;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+.menuForm input:focus {
+    outline: none;
+    border-radius: 20px;
+    background-color: var(--gray);
+    content: var(--dark-gray);
+}
+
+.menuForm input::-webkit-input-placeholder {
+    color: var(--placeholder);
+}
+
+.menuForm input:focus::-webkit-input-placeholder {
+    color: var(--placeholder);
+}
+
+.menuForm input:hover::-webkit-input-placeholder {
+    color: var(--placeholder);
+    font-size: 15px !important;
+}
+
+/* Firefox < 19 */
+.menuForm input:-moz-placeholder {
+    color: var(--placeholder);
+}
+
+.menuForm input:focus:-moz-placeholder {
+    color: var(--placeholder);
+}
+
+/* Firefox > 19 */
+.menuForm input::-moz-placeholder {
+    color: var(--placeholder);
+}
+
+.menuForm input:focus::-moz-placeholder {
+    color: var(--placeholder);
+}
+
+/* Internet Explorer 10 */
+.menuForm input:-ms-input-placeholder {
+    color: var(--placeholder);
+}
+
+.menuForm input:focus:-ms-input-placeholder {
+    color: var(--placeholder);
+}
+
+.btn {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.click {
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    border: none;
+    width: 100%;
+    background-color: #2973A9;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #2973A9;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+
+/* .click:hover {
+    border: none;
+    width: 50%;
+    background-color: #2973A9;
+    color: var(--dark);
+    border-radius: 20px;
+    padding: .5rem;
+
+} */
+
+@media screen and (max-width: 1130px) and (min-width: 500px) {
+    .container {
+        margin: 2rem 3rem 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        margin: 1rem 1rem 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .menu {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .dishes h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .dishes h3 {
+        font-size: 1.5rem;
+    }
+}
