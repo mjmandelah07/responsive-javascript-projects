@@ -23,4 +23,8 @@ addItem.addEventListener('click', function() {
     // append the new list item to the list
     dishList.appendChild(menuLi);
     priceList.appendChild(priceLi);
+
+    // clear input fields
+    menu.innerHTML="";
+    price.innerHTML="";
 })
