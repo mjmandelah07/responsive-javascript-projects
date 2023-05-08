@@ -14,3 +14,4 @@ Click Link Of Each Project To Check It Out
 6. random-user-data (<https://mjmandelah07.github.io/mj-javascripts-projects/random-user-data>) AND <https://coruscating-piroshki-ad8cf3.netlify.app/>
 
 7. food-menu [ https://mjmandelah07.github.io/mj-javascripts-projects/food-menu ] AND [ https://aramid-food-menu.netlify.app/ ]
+8. food-menu [ https://mjmandelah07.github.io/mj-javascripts-projects/mobile-drum-kit ] AND [ https://aramid-drum-kit.netlify.app/ ]
