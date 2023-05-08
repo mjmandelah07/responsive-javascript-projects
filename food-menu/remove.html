@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FOOD MENU</title>
+</head>
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Aramid
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Add Item</a>
+      <a href=".//update.html">Update Item</a>
+      <a href=".//remove.html">Remove Item</a>
+      <a href=".//clear.html" >Clear Item</a>
+    </div>
+  </div>
+<div class="container-div">
+    <h1 class="title">Remove Food Item</h1>
+
+
+    <table id="foodTable" cellpadding="100">
+        <thead>
+            <tr>
+                <th id="th1">Food</th>
+                <th id="th2">Price</th>            </tr>
+        </thead>
+    </table>
+
+
+    <form class="menuForm" id="clearButton" onsubmit="removeValidate()">
+        <input class="menuField" type="text" id="foodInput" placeholder="Enter food name" required>
+        <!-- <input class="price" type="text" pattern="\d*" id="priceInput" maxlength="4" placeholder="Add price" required> -->
+        <span id="status"></span>
+        <button class="click" type="submit">Remove item</button>
+    </form>
+</div>
+
+<body>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

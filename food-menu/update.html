@@ -30,9 +30,8 @@
     <a href=".//clear.html">Clear Item</a>
   </div>
 </div>
-
 <div class="container-div">
-  <h1 class="title">Add Food Item</h1>
+  <h1 class="title">Update Food Item</h1>
 
   <table id="foodTable" cellpadding="100">
     <thead>
@@ -43,11 +42,12 @@
     </thead>
   </table>
 
-  <form class="menuForm" id="addForm" onsubmit="addValidate()">
+  <form class="menuForm" id="updateForm" onsubmit="updateValidate();">
     <input class="menuField" type="text" id="foodInput" placeholder="Enter Food Name" required>
-    <input class="price" type="text" pattern="\d*" id="priceInput" maxlength="4" placeholder="Enter Food Price" required>
+    <input class="price" type="text" pattern="\d*" id="priceInput" maxlength="4" placeholder="Enter Food Price"
+      required>
     <span id="status"></span>
-    <button class="click" type="submit">Add item</button>
+    <button class="click" type="submit">Update item</button>
   </form>
 </div>
 
