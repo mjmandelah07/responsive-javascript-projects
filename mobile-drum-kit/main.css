@@ -31,7 +31,7 @@ kbd {
 }
 
 .playing {
-    transform: scale(1.1);
+    transform: rotate(1800deg);
     border-color: #ffc600;
     box-shadow: 0 0 1rem #0e0d01;
 }
@@ -48,11 +48,11 @@ kbd {
 
     .key {
         border: .4rem solid rgba(255, 0, 191, 0.555);
-        border-radius: 2rem;
+        border-radius: 5rem;
         margin: 1.5rem;
         font-size: 2rem;
         padding: 1rem .5rem;
-        transition: all .5s ease;
+        transition: all .2s ease;
         width: 10rem;
         text-align: center;
         color: blueviolet;
@@ -88,7 +88,7 @@ kbd {
     }
 
     .playing {
-        transform: scale(1.1);
+        transform: rotate(180deg);
         border-color: #ffc600;
         box-shadow: 0 0 1rem #0e0d01;
     }
@@ -134,7 +134,7 @@ kbd {
         margin: 1.5rem;
         font-size: 2rem;
         padding: 1rem 1rem;
-        transition: all .5s ease;
+        transition: all .2s ease;
         width: 10rem;
         text-align: center;
         color: blueviolet;
@@ -145,7 +145,7 @@ kbd {
 
 
 .playing {
-    transform: scale(1.1);
+    transform: rotate(180deg);
     border-color: #ffc600;
     box-shadow: 0 0 1rem #0e0d01;
 }
@@ -199,7 +199,7 @@ kbd {
         margin: 1.5rem;
         font-size: 2rem;
         padding: 1rem 1rem;
-        transition: all .5s ease;
+        transition: all .2s ease;
         width: 10rem;
         text-align: center;
         color: blueviolet;
@@ -209,7 +209,7 @@ kbd {
     }
 
     .playing {
-        transform: scale(1.1);
+        transform: rotate(180deg);
         border-color: #ffc600;
         box-shadow: 0 0 1rem #0e0d01;
     }
@@ -265,7 +265,7 @@ kbd {
         margin: 1.5rem;
         font-size: 2rem;
         padding: 1rem 1rem;
-        transition: all .5s ease;
+        transition: all .2s ease;
         width: 10rem;
         text-align: center;
         color: blueviolet;
@@ -275,7 +275,7 @@ kbd {
     }
 
 .playing {
-    transform: scale(1.1);
+    transform: rotate(180deg);
     border-color: #ffc600;
     box-shadow: 0 0 1rem #0e0d01;
 }
@@ -329,7 +329,7 @@ kbd {
         margin: 1.5rem;
         font-size: 2rem;
         padding: 1rem 1rem;
-        transition: all .5s ease;
+        transition: all .2s ease;
         width: 10rem;
         text-align: center;
         color: blueviolet;
@@ -339,7 +339,7 @@ kbd {
     }
 
 .playing {
-    transform: scale(1.1);
+    transform: rotate(180deg);
     border-color: #ffc600;
     box-shadow: 0 0 1rem #0e0d01;
 }

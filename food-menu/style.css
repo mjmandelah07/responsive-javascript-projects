@@ -8,6 +8,9 @@
     --blue: #2973A9;
     --white: #fff;
 }
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
 * {
   box-sizing: border-box;
 }
@@ -225,10 +228,6 @@ td {
     color: var(--placeholder);
 }
 
-.menuForm input:hover::-webkit-input-placeholder {
-    color: var(--placeholder);
-    font-size: 15px !important;
-}
 
 /* Firefox < 19 */
 .menuForm input:-moz-placeholder {
@@ -276,13 +275,16 @@ td {
 }
 
 
-@media screen and (max-width: 1130px) and (min-width: 500px) {
-    .container {
-        margin: 2rem 3rem 2rem 3rem;
+@media screen and (max-width: 1300px) and (min-width: 750px){
+    .container-div {
+        margin: 1rem 1.5rem;
     }
 }
 
 @media screen and (max-width: 750px) {
+  .container-div {
+    margin: 1rem 1rem 1rem 1rem;
+}
     .th1 {
         font-size: 1.7rem;
     }

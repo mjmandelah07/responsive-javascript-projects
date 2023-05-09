@@ -118,6 +118,8 @@ const addItems = (name, price) => {
     document.getElementById("status").style.color = "red";
     // get the input field values
     let menuValue = menus.value.trim();
+    let priceValue = prices.value.trim();
+    priceValue = parseInt(priceValue);
 
     // check if the input value is empty
     if (menuValue.length === 0 || priceValue.length === 0) {
