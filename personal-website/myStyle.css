@@ -1,7 +1,3 @@
-/* body {
-    margin: 0;
-} */
-
 html,body,h1,h2,h3,h4,h5,h6 {
     font-family: "Roboto", sans-serif
 }
@@ -43,23 +39,23 @@ html,body,h1,h2,h3,h4,h5,h6 {
 
 /* styling for hobbies section */
 .reading {
-    height: 24px;
+    height: 20px;
     width: 100%;
 }
 .movies {
-    height: 24px;
+    height: 20px;
     width: 100%;
 }
 .coding {
-    height: 24px;
+    height: 20px;
     width: 100%;
 }
 .cooking {
-    height: 24px;
+    height: 20px;
     width: 100%;
 }
 .dancing {
-    height: 24px;
+    height: 20px;
     width: 100%;
 }
 /* Styling for gallery */
