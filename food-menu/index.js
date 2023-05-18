@@ -13,7 +13,6 @@ let clearButton = document.getElementById("clearButton");
 
 // declare the menu data structure
 let foodData = [];
-
 // Retrieve the food data from local storage
 let storedFoodData = localStorage.getItem("foodData");
 if (storedFoodData !== null) {
@@ -54,7 +53,7 @@ const clearFoodData = () => {
 
 // Remove a food item from the array
 const removeFoodItem = (name) => {
-    let index = foodData.findIndex(food => food.name === name);
+    let index = foodData.findIndex(food => food.name === name); // 2
     if (index !== -1) {
       foodData.splice(index, 1);
       localStorage.setItem("foodData", JSON.stringify(foodData));
@@ -65,7 +64,7 @@ const removeFoodItem = (name) => {
 
 // Update a food item in the array
 const updateFoodItem = (name, price) => {
-  let index = foodData.findIndex((food) => food.name === name);
+  let index = foodData.findIndex((food) => food.name === name); // fruit index - 3
   if (index >= 0) {
     foodData[index].price = price;
     localStorage.setItem("foodData", JSON.stringify(foodData));

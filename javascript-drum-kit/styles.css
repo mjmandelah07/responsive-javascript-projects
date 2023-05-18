@@ -19,17 +19,7 @@ body, html {
     font-weight: bold;
     text-shadow: 0 0 .5rem black;
   }
-.type{
-    color:white;
-    text-align: center;
-    font-size: xx-large;
-}
-.link{
-  color: white;
-  text-align: center;
-  font-size: large;
-  padding-top: 1rem;
-}
+
 
 .key {
     border: .4rem solid rgba(255, 0, 191, 0.555);

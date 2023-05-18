@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    margin-top: .5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 588px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+}
